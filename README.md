@@ -48,3 +48,7 @@ DanmakuHelper
 
 
 ##说明与下载：[点击前往](http://biliscript-syndicate.github.io/news/2013/02/23/Danmaku-Helper.html)
+
+##License : GNU GPLv3. 
+
+ 
