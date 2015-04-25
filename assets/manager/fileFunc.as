@@ -21,7 +21,7 @@ import flash.net.FileReference;
 
 public var InputWin:InputWindow ; 
 public var isShowInputWin:Boolean = false;
-public var inputMode:int = 1;//本来不该声明这些全局变量的。。。TODO
+public var inputMode:int = 1;
 
 public var txtFile:TxtFileHandler;
 public var svgFile:SvgFileHandler;
@@ -63,14 +63,12 @@ public function checkSvgLoad(event:Event):void{
 	{
 		var GraphicsCommands:String;
 		this.removeEventListener(Event.ENTER_FRAME,checkSvgLoad);
-		//	this._warnings.text = "";
 			var Motifs:Array = SVGToMotifs.parse(svgFile.sender.toString());
 			GraphicsCommands = MotifsToAS3GraphicsCommands.toCommandsString(Motifs);
 			scriptArea.text = isDrawPath.selectedIndex  ? GraphicsCommands : scriptManager.transToPath(GraphicsCommands);
 			if(this.currentState=="draw")
 				this.currentState="script";
 			return; 
-			//	_warnings.text = SVGToMotifs.getWarnings();
 	}
 }
 protected function saveFile(event:MouseEvent):void
@@ -170,7 +168,6 @@ public function inputScript():void
 			var newLayerData:DataItem=layerInfo.createLayerData(newLayer);
 			o.layerArr.push(newLayer);
 			layerList.addItem(newLayerData);
-			//	shapeArea.addChild(o.shapeArr[k]);
 			var shape:Shape = temp.shapeArr[k];
 			o.shapeArr.push(shape);
 			shapeArea.addChild(o.shapeArr[o.shapeArr.length-1]);

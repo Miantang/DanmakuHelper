@@ -8,7 +8,6 @@ import mx.core.IFlexDisplayObject;
 import mx.events.DragEvent;
 import mx.managers.DragManager;
 
-//import assets.skins.ColumnDropIndicator;
 import assets.skins.RowDropIndicator;
 
 import spark.components.DataGrid;
@@ -29,8 +28,6 @@ private function startDragDrop(event:GridEvent):void
 		return;
 	
 	if (event.rowIndex == -1 && event.itemRenderer)
-		// dragging headers
-		//startColumnDragDrop(event);
 		return;
 	else
 		startRowDragDrop(event);

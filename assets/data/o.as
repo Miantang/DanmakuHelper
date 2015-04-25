@@ -120,13 +120,12 @@ package assets.data
 				return;
 			if(o.memoryCommandArr[k].length == 0)
 				return;
-			trace(o.memoryCommandArr[k].length+":o.memoryCommandArr[k].length");
+			
 			if(o.layerArr[k]._mode == 0)
 			{
-				trace("o.layerArr[k]._mode == 0");
 				if(o.memoryCommandArr[k].length == 1 && o.memoryCommandArr[k][ o.memoryCommandArr[k].length - 1 ] == 1)
 				{
-					trace("o.memoryCommandArr[k].length:"+o.memoryCommandArr[k].length);
+
 					o.commandArr[k].push(o.memoryCommandArr[k][o.memoryCommandArr[k].length-1]);   	o.memoryCommandArr[k].pop();
 					o.coordArr[k] = o.coordArr[k].concat( o.memoryCoordArr[k].slice(-2) );    	 	o.memoryCoordArr[k].splice( -2 , 2 );
 				}
@@ -135,7 +134,7 @@ package assets.data
 					switch(o.memoryCommandArr[k][ o.memoryCommandArr[k].length - 1 ])
 					{
 						case 1:
-							trace("这？？？怎么可能是 1");
+
 							o.commandArr[k].push(o.memoryCommandArr[k][o.memoryCommandArr[k].length-1]);   o.memoryCommandArr[k].pop();
 							o.coordArr[k] = o.coordArr[k].concat( o.memoryCoordArr[k].slice(-2) );    	 o.memoryCoordArr[k].splice( -2 , 2 );
 							break;
@@ -173,8 +172,7 @@ package assets.data
 			o.memoryCommandArr[index] = new Vector.<int>();
 			o.memoryCoordArr[index] = new Vector.<Number>();
 		}
-		/////////////////////////////////////////////////////////////////////
-		//刷新层信息
+
 		public static function refreshLayerData(index:Number,property:String,value:Object):void
 		{
 			o.layerArr=layerInfo.refreshLayerData(index,property,value,o.layerArr);

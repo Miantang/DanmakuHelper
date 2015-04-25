@@ -18,7 +18,7 @@ import mx.core.UIComponent;
 import flash.ui.Keyboard;
 import flash.ui.Mouse;
 import flash.ui.MouseCursor;
-//http://blog.csdn.net/txiejun/article/details/4861257
+
 private function maskInput():Boolean 
 { 
 	var focusObj:Object = Object(this.focusManager.getFocus()); 

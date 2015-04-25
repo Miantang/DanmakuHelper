@@ -28,15 +28,6 @@
 	<fx:Script>
 		<![CDATA[
 			import mx.events.FlexEvent;
-			/******************************************************************************/
-			/**     想到的功能备忘
-			 * 1.双填充模式
-			 * 5.拖曳排序，
-			 * 10.导入图片转代码……
-			 * 12.鼠标中心点放缩
-			 * 13.画板重置位置
-			 * 													 						 **/
-			/******************************************************************************/
 			
 			[Bindable]public var modeList:ArrayCollection=new ArrayCollection([{label:"填充",value:0},{label:"线条",value:1}]);
 			[Bindable]public var scriptModeList:ArrayCollection=new ArrayCollection([{label:"drawPath",value:0},{label:"分步",value:1}]);
@@ -46,8 +37,6 @@
 				liveCanvas.addChild(o.liveShape);
 				canvas.addEventListener(MouseEvent.MOUSE_WHEEL,scaleCanvas);
 				addEventListener(KeyboardEvent.KEY_DOWN,KeyHandler);
-			//	layerBox.addEventListener(DragEvent.DRAG_COMPLETE, dragCompleteHandler);	
-				//layerBox.addEventListener(DragEvent.DRAG_ENTER, dragEnterHandler);
 			}
 		]]>
 	</fx:Script>
@@ -291,7 +280,6 @@
 							<s:GridItemRenderer>
 								<fx:Script>
 									<![CDATA[
-										// dragMoveEnabled="true" dropEnabled="true" dragEnabled="true"
 										import mx.events.FlexEvent;
 										import assets.data.*;
 										public function visibleChanged(event:Event):void
@@ -319,7 +307,7 @@
 											var items:Vector.<Object> = grid.selectedItems;
 											var numItems:int = items ? items.length : 0;
 											cb.selected = grid.dataProvider.length == numItems;
-											//cb.partial = numItems > 0;
+
 											owner.addEventListener("selectionChange", selectionChangeHandler);
 										}
 										
@@ -346,15 +334,12 @@
 											}
 											else
 											{
-												//data.visible=cb.selected;
 												
 												var n:int = DataGrid(owner).dataProvider.length;
 												var arr:Array = [];
 												for (var i:int = 0; i < n; i++)
 												{
 													arr.push(i);
-												//	this.parentApplication.refreshLayerData(this.parentApplication.layerBox.selectedIndex,"visible",data.visible);
-												//DataGrid(owner).selectedIndices = Vector.<int>(arr);
 												}
 												
 											}
@@ -386,7 +371,7 @@
 											{
 											nameValue.editable = true;
 											nameValue.setStyle( "contentBackgroundAlpha", 1);
-											}else//以下为enter键事件的副本
+											}else
 											{
 												data.name = nameValue.text;
 												o.refreshLayerData(this.parentApplication.layerBox.selectedIndex,"name",data.name);
@@ -462,7 +447,7 @@
 												trace(data.fillAlpha,o.layerArr[this.parentApplication.layerBox.selectedIndex]._fillAlpha);
 												fillAlphaValue.editable = true;
 												fillAlphaValue.setStyle( "contentBackgroundAlpha", 1);
-											}else//以下为enter键事件的副本
+											}else
 											{
 												data.fillAlpha = Number(fillAlphaValue.text);
 												if(data.fillAlpha>1){data.fillAlpha=1;}else if(data.fillAlpha<0){data.fillAlpha=0;}
@@ -527,7 +512,7 @@
 											{
 												borderAlphaValue.editable = true;
 												borderAlphaValue.setStyle( "contentBackgroundAlpha", 1);
-											}else//以下为enter键事件的副本
+											}else
 											{
 												data.borderAlpha=Number(borderAlphaValue.text);
 												if(data.borderAlpha>1){data.borderAlpha=1;}else if(data.borderAlpha<0){data.borderAlpha=0;}

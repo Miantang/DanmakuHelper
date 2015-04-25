@@ -41,7 +41,6 @@ package assets.manager
 		}
 		public static function exchange(index1:Number,index2:Number,array:Array):Array
 		{
-			//trace(array[index1],array[index2]);
 			var tempData:Object=array[index1];
 			array[index1]=array[index2];
 			array[index2]=tempData;

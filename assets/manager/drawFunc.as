@@ -105,7 +105,6 @@ public function motivateTool(e:MouseEvent):void
 	}
 }
 
-//给我一个小圆点，我什么也不能撬动
 public function drawLastCircle(x:Number,y:Number):void
 {
 	scalePoint.x = x - 2;scalePoint.y = y - 2;

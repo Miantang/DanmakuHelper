@@ -1,13 +1,4 @@
 
-/******************************************************************************/
-/**                                图片部分												
- 1、读取图片→详见FileHandler
- * 显示图片 目前的整体显示图片方法 有待改进
- 2、图片alpha控制
- 3、更改背景图片缩放_滑动条时
- 4、图片拖曳控制																
- **/
-/******************************************************************************/
 import assets.FileHandler.*;
 import assets.data.*;
 
@@ -20,7 +11,6 @@ import flash.ui.MouseCursor;
 import mx.core.*;
 
 public var imgFile:ImgFileHandler;
-//读取图片→详见FileHandler
 public function getNewImg(event:MouseEvent):void
 {
 	imgFile=new ImgFileHandler();

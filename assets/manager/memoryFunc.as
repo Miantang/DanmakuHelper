@@ -1,11 +1,3 @@
-// ActionScript file
-/******************************************************************************/
-/**                                撤销与重做部分
- * 	
- * memoryArr保存Arr pop掉的所有项
- * 
- * 							 												 **/
-/******************************************************************************/
 import assets.data.*;
 import flash.events.*;
 private function undoStep(e:MouseEvent):void

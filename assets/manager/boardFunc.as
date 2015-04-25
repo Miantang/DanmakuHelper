@@ -1,12 +1,3 @@
-// ActionScript file
-/******************************************************************************/
-/**                                其他功能部分		
- 
- ~ 1、坐标信息
- 2、画布拖拽与缩放
- * 3.更改背景色
- **/
-/******************************************************************************/
 import assets.data.*;
 import assets.manager.*;
 import assets.FileHandler.*;
@@ -30,12 +21,10 @@ public function scaleCanvas(e:MouseEvent):void
 		canvas.scaleX-=0.04;imageArea.scaleX-=0.04;
 		canvas.scaleY-=0.04;imageArea.scaleY-=0.04;
 	}
-	//scaleInfo.text="缩放比例:"+liveCanvas.scaleX.toFixed(1).toString()+"x";
 }
 //拖拽画布
 public function dragCanvasDown(e:MouseEvent):void
 {	
-	//	o.mousePos[0].x=mouseX;o.mousePos[0].y=mouseY;
 	o.mousePos[0] = new Point(e.localX,e.localY);
 	canvas.addEventListener(MouseEvent.MOUSE_MOVE,dragCanvasMove);
 	canvas.addEventListener(MouseEvent.MOUSE_UP,dragCanvasStop);
