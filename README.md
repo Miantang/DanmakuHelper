@@ -5,7 +5,7 @@ DanmakuHelper
 ####using Flash Actionscript language.
 ----
 
-####一款多图层矢量代码绘图工具。适用于bilibili.tv的高级代码弹幕图像绘制。
+####一款多图层矢量代码绘图工具。适用于bilibili.com的高级代码弹幕图像绘制。
 
 
 ###能实现的功能：
@@ -49,6 +49,6 @@ DanmakuHelper
 
 ##说明与下载：[点击前往](http://biliscript-syndicate.github.io/news/2013/02/23/Danmaku-Helper.html)
 
-##License : GNU GPLv3. 
+##License : MIT. 
 
  
