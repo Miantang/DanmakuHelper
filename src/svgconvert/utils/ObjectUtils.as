@@ -1,4 +1,4 @@
-﻿package com.millermedeiros.utils {
+﻿package svgconvert.utils {
 	
 	/**
 	 * ObjectUtils

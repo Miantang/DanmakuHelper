@@ -3,9 +3,9 @@
  * This software is released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
  */
 
-package com.millermedeiros.parsers {
+package svgconvert.parsers {
 	
-	import com.millermedeiros.utils.StringUtils;
+	import svgconvert.utils.StringUtils;
 	
 	/**
 	 * Simple CSS parser - (Obs: doesn't implement any kind of inheritance)

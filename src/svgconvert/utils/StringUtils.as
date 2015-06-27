@@ -1,4 +1,4 @@
-﻿package com.millermedeiros.utils {
+﻿package svgconvert.utils {
 	
 	/**
 	 * StringUtils - Useful functions for string formating

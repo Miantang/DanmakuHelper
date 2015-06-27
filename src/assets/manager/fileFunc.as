@@ -8,7 +8,7 @@
 import assets.data.*;
 import assets.manager.*;
 import assets.FileHandler.*;
-import com.millermedeiros.parsers.*;
+import svgconvert.parsers.*;
 
 import mx.managers.PopUpManager;
 import flash.events.*;

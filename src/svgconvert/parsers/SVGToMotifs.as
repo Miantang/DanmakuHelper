@@ -12,24 +12,24 @@
  //TODO: maybe make processing asynchronous or limit number of operations per enterframe to avoid blocking the system.
  //TODO: split parser into different classes (one for commands and one for paths) so code is a little bit cleaner (don't know why I haven't done like this since the beginning).
  
-package com.millermedeiros.parsers {
+package svgconvert.parsers {
 	
-	import com.millermedeiros.geom.Arc;
-	import com.millermedeiros.geom.CubicBezier;
-	import com.millermedeiros.geom.Ellipse;
-	import com.millermedeiros.geom.Line;
-	import com.millermedeiros.geom.Polygon;
-	import com.millermedeiros.geom.Polyline;
-	import com.millermedeiros.geom.QuadraticBezier;
-	import com.millermedeiros.geom.Rect;
-	import com.millermedeiros.geom.SVGArc;
-	import com.millermedeiros.utils.ArrayUtils;
-	import com.millermedeiros.utils.ColorUtils;
-	import com.millermedeiros.utils.GeomUtils;
-	import com.millermedeiros.utils.MatrixUtils;
-	import com.millermedeiros.utils.NumberUtils;
-	import com.millermedeiros.utils.ObjectUtils;
-	import com.millermedeiros.utils.StringUtils;
+	import svgconvert.geom.Arc;
+	import svgconvert.geom.CubicBezier;
+	import svgconvert.geom.Ellipse;
+	import svgconvert.geom.Line;
+	import svgconvert.geom.Polygon;
+	import svgconvert.geom.Polyline;
+	import svgconvert.geom.QuadraticBezier;
+	import svgconvert.geom.Rect;
+	import svgconvert.geom.SVGArc;
+	import svgconvert.utils.ArrayUtils;
+	import svgconvert.utils.ColorUtils;
+	import svgconvert.utils.GeomUtils;
+	import svgconvert.utils.MatrixUtils;
+	import svgconvert.utils.NumberUtils;
+	import svgconvert.utils.ObjectUtils;
+	import svgconvert.utils.StringUtils;
 	
 	import flash.geom.Matrix;
 	import flash.geom.Point;

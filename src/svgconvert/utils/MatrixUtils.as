@@ -3,7 +3,7 @@
  * Copyright (c) 2009 Miller Medeiros <http://www.millermedeiros.com/>
  * This software is released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
  */
-package com.millermedeiros.utils {
+package svgconvert.utils {
 	
 	import flash.geom.Matrix;
 	import flash.geom.Point;

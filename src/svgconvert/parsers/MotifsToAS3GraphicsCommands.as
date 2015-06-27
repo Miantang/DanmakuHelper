@@ -3,8 +3,8 @@
  * This software is released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
  */
 
-package com.millermedeiros.parsers {
-	import com.millermedeiros.utils.ArrayUtils;
+package svgconvert.parsers {
+	import svgconvert.utils.ArrayUtils;
 	
 	/**
 	 * Generic drawing commands to AS3 Graphics drawing commands

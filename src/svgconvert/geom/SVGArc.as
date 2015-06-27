@@ -3,9 +3,9 @@
  * This software is released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
  */
 
-package com.millermedeiros.geom {
+package svgconvert.geom {
 	
-	import com.millermedeiros.utils.GeomUtils;
+	import svgconvert.utils.GeomUtils;
 	import flash.geom.Point;
 	
 	/**

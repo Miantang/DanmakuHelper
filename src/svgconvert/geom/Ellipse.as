@@ -3,11 +3,11 @@
  * Copyright (c) 2009 Miller Medeiros <http://www.millermedeiros.com/>
  * This software is released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
  */
-package com.millermedeiros.geom {
+package svgconvert.geom {
 	
-	import com.millermedeiros.utils.GeomUtils;
-	import com.millermedeiros.utils.MatrixUtils;
-	import com.millermedeiros.utils.NumberUtils;
+	import svgconvert.utils.GeomUtils;
+	import svgconvert.utils.MatrixUtils;
+	import svgconvert.utils.NumberUtils;
 	import flash.display.Graphics;
 	import flash.geom.Matrix;
 	import flash.geom.Point;
