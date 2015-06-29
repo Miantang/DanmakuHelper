@@ -4,7 +4,7 @@ DanmakuHelper
 **A multi-layer drawing software based on Vector code for BiliScript(also can be called mode8)**
 
 **一款多图层矢量代码绘图工具。适用于bilibili.com的高级代码弹幕图像绘制/转换。**
-----
+
 
 可用于辅助[弹幕艺术][1]设计,临摹/自绘矢量画,svg转弹幕艺术代码.
 
@@ -40,9 +40,9 @@ DanmakuHelper
 
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-[1] : http://ppii.in/blog/2015/07/11/what-about-comment-art/
-[img01]: readmeIMG/1_1.png
-[img02]: readmeIMG/1_2.png
-[img03]: readmeIMG/screenshot20130301202046.png
+[1]: "http://ppii.in/blog/2015/07/11/what-about-comment-art/"
+[img01]: readmeIMG/1.png
+[img02]: readmeIMG/2.png
+[img03]: readmeIMG/3.png
 
  
