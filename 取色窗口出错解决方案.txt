@@ -1,0 +1,23 @@
+由于Flash安全机制的限制，可能会出现弹出的“取色窗口”无法加载图片等情况。(chrome浏览器可能无法解决)
+
+管理员模式运行“管理员模式运行.bat”解决。完成的以下操作：
+
+
+  在以下目录下创建一个文本文件，在文件里输入需要访问本地资源flash的详细路径，保存。
+  无此文件夹就新建同名文件夹。
+  最后重启
+Win7：
+C:\Users\你的用户名\AppData\Roaming\Macromedia\Flash Player\#Security\FlashPlayerTrust
+XP：
+C:\WINDOWS\system32\Macromed\Flash\FlashPlayerTrust
+或（？）
+C:\Documents and Settings\你的用户名\Application Data\Macromedia\Flash Player\#Security\FlashPlayerTrust
+
+然后在这个文件夹里边新建一个 .txt 文件，（文件名随意，最好英文或数字）里边写上你的swf要访问的文件盘符，如有多个换行隔开。写"D:\"可以访问D盘所有子目录。 
+最后改文件扩展名为.cfg （不改也行）
+如：
+1.cfg :
+    D:\
+    E:\mode8\
+
+	*此文件可能会在清理浏览器缓存时被删除。
