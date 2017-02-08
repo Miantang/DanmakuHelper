@@ -8,7 +8,9 @@ DanmakuHelper
 
 可用于辅助[弹幕艺术][1]设计,临摹/自绘矢量画,svg转弹幕艺术代码.
 
-<http://ppii.in/DanmakuHelper>
+在线直接使用版：
+
+<http://miantang.github.io/DanmakuHelper>
 
 ###能实现的功能：
 
