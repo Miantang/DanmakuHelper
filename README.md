@@ -12,7 +12,7 @@ DanmakuHelper
 
 <http://miantang.github.io/DanmakuHelper>
 
-###能实现的功能：
+### 能实现的功能：
 
 > 1.  可添加背景临摹图片，图片可调整放缩透明度。
 > 1.  支持分图层绘图，图层可删除，可排序。
@@ -24,7 +24,7 @@ DanmakuHelper
 > 1.  常用按键全分配了键盘快捷键。可查看帮助信息。鼠标悬停也有提示信息。
 > 1. svg导入,输出.转mode8.
 
-###预览
+### 预览
 
 ![img01]
 
@@ -32,13 +32,15 @@ DanmakuHelper
 
 ![img03]
 
-###离线下载：[点击前往](http://pan.baidu.com/share/link?shareid=374245&uk=1745881826)
+### 离线下载：
 
-###在线版本
+[点击前往](http://pan.baidu.com/share/link?shareid=374245&uk=1745881826)
+
+### 在线版本
 
 <http://ppii.in/DanmakuHelper>
 
-##License : MIT. 
+## License
 
 [![License](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
